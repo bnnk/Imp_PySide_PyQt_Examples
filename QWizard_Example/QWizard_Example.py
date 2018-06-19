@@ -67,11 +67,5 @@ nxt.clicked.connect(func)
 wizard.addPage(page1)
 wizard.addPage(page2)
 
-# WHAT'S THIS SETUP
-wizard.setWhatsThis('You DumbleDork!')
-page1.setWhatsThis('This is page 1 of course!')
-page2.setWhatsThis('22222!')
-lineEdit.setWhatsThis('You Shall Not Pass!')
-
 wizard.show()
 sys.exit(app.exec_())
