@@ -43,7 +43,7 @@ try: # PYSIDE
         lineEdit,
         lineEdit.text(),
         'textChanged')
-except TypeError: # PYQT
+except TypeError: # PYQT5
     page1.registerField('myField*', 
         lineEdit,
         lineEdit.text(),
@@ -60,7 +60,6 @@ hLayout2 = QtWidgets.QHBoxLayout(page2)
 hLayout2.addWidget(label)
 
 # CONNECT SIGNALS AND PAGES
-# lineEdit.textChanged.connect(lambda:label.setText(lineEdit.text()))
 nxt = wizard.button(QtWidgets.QWizard.NextButton)
 func = lambda:label.setText(page1.field('myField'))
 nxt.clicked.connect(func)
