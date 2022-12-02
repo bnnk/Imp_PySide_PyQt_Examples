@@ -1,13 +1,5 @@
 import sys
-import Qt
-from Qt import QtWidgets, QtGui
-
-print ('Qt Version: ' + Qt.__qt_version__)
-print ('Binding Version: ' + Qt.__binding_version__)
-print ('Is this PySide2? ', Qt.IsPySide2)
-print ('Is this PyQt5? ', Qt.IsPyQt5)
-print ('Is this PySide? ', Qt.IsPySide)
-print ('Is this PyQt4? ', Qt.IsPyQt4)
+from PySide6 import QtWidgets, QtCore
 
 # CREATE WIZARD, WATERMARK, LOGO, BANNER
 app = QtWidgets.QApplication(sys.argv)
